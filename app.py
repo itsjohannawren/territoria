@@ -784,7 +784,7 @@ def main ():
 									message ["allowed_mentions"]["parse"] = ["everyone"]
 
 								message ["content"] += "**Alliance:** %s\n**Relationship:** %s\n\n**Starting %s%s**\n " % (
-									instance ["name"],
+									settings ["instances"][related_id]["name"],
 									capitalize (relationship),
 									"now!" if alert == 0 else "in ",
 									seconds_to_human (alert * 60)
@@ -800,9 +800,9 @@ def main ():
 
 								post (
 									url = instance ["webhook"],
-							headers = {
-								"Content-Type": "application/json"
-							},
+									headers = {
+										"Content-Type": "application/json"
+									},
 									json = message
 								)
 
