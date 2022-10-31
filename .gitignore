@@ -1,0 +1,6 @@
+# Python Virtual Environment Information
+bin
+lib
+pyvenv.cfg
+
+settings.yaml

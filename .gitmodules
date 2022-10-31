@@ -1,0 +1,3 @@
+[submodule "stfc-resources"]
+	path = stfc-resources
+	url = https://github.com/itsjohannawren/stfc-resources.git
