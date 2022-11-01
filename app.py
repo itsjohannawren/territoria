@@ -786,7 +786,7 @@ def main ():
 								message ["content"] += "**Alliance:** %s\n**Relationship:** %s\n\n**Starting %s%s**\n " % (
 									settings ["instances"][related_id]["name"],
 									capitalize (relationship),
-									"now!" if alert == 0 else "in ",
+									"" if alert == 0 else "in ",
 									seconds_to_human (alert * 60)
 								)
 								if alert >= 60:
